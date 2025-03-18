@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\desktop\\pr3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\desktop\\pr3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\desktop\\pr3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\desktop\\pr3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmRazmjene.cs",
+              "DocumentMoniker": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
+              "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
+              "ToolTip": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
+              "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvyEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:07:35.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmRazmjene.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
+              "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
+              "ToolTip": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs [Design]",
+              "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:07:28.892Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmPretraga.cs",
+              "DocumentMoniker": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmPretraga.cs",
+              "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmPretraga.cs",
+              "ToolTip": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmPretraga.cs",
+              "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmPretraga.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAADwv2UAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T08:08:34.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmPretraga.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmPretraga.cs",
+              "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmPretraga.cs",
+              "ToolTip": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\cs-winforms-exam-template-2024-25-main\\DLWMS.WinApp\\IB220240\\frmPretraga.cs [Design]",
+              "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmPretraga.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T08:08:20.707Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

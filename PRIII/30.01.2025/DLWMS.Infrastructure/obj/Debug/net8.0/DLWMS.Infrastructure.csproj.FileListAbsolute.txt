@@ -1,0 +1,15 @@
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\bin\Debug\net8.0\DLWMS.Infrastructure.deps.json
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\bin\Debug\net8.0\DLWMS.Infrastructure.dll
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\bin\Debug\net8.0\DLWMS.Infrastructure.pdb
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\bin\Debug\net8.0\DLWMS.Data.dll
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\bin\Debug\net8.0\DLWMS.Data.pdb
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.Infrastructure.AssemblyInfo.cs
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.In.670B55DA.Up2Date
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.Infrastructure.dll
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\refint\DLWMS.Infrastructure.dll
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\DLWMS.Infrastructure.pdb
+C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Infrastructure\obj\Debug\net8.0\ref\DLWMS.Infrastructure.dll
