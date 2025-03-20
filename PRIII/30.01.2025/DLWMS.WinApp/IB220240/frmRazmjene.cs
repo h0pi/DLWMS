@@ -58,7 +58,7 @@ namespace DLWMS.WinApp.IB220240
                 MessageBox.Show("Unesite validan broj ECTS bodova!");
                 throw;
             }
-            return true;
+            return false ;
         }
     }
 }
