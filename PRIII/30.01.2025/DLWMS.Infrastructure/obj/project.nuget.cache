@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mB75rt5GgTo=",
+  "dgSpecHash": "vBCLzQ8FhAA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\30.01.2025\\DLWMS.Infrastructure\\DLWMS.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Infrastructure\\DLWMS.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ammar\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.0\\microsoft.data.sqlite.core.9.0.0.nupkg.sha512",
     "C:\\Users\\Ammar\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",

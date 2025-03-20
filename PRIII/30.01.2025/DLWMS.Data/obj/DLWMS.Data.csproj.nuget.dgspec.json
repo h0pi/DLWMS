@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj": {}
+    "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj": {
+    "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
         "projectName": "DLWMS.Data",
-        "projectPath": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
+        "projectPath": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
         "packagesPath": "C:\\Users\\Ammar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\30.01.2025\\DLWMS.Data\\obj\\",
+        "outputPath": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

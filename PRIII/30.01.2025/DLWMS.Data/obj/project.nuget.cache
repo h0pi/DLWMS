@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cYjOvG1o2B8=",
+  "dgSpecHash": "wF2AB+cWfpA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ammar\\Desktop\\PR3\\cs-winforms-exam-template-2024-25-main\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
+  "projectFilePath": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ammar\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0\\microsoft.win32.systemevents.9.0.0.nupkg.sha512",
     "C:\\Users\\Ammar\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512"

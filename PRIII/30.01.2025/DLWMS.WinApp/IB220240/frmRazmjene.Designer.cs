@@ -39,14 +39,14 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            dataGridView1 = new DataGridView();
+            dgvPodaci = new DataGridView();
             Univerzitet = new DataGridViewTextBoxColumn();
             Pocetak = new DataGridViewTextBoxColumn();
             Kraj = new DataGridViewTextBoxColumn();
             ECTS = new DataGridViewTextBoxColumn();
             Okoncana = new DataGridViewCheckBoxColumn();
             Obrisi = new DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPodaci).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -100,6 +100,7 @@
             btnSacuvaj.TabIndex = 3;
             btnSacuvaj.Text = "Sacuvaj";
             btnSacuvaj.UseVisualStyleBackColor = true;
+            btnSacuvaj.Click += btnSacuvaj_Click;
             // 
             // dtpPocetak
             // 
@@ -142,17 +143,17 @@
             label5.TabIndex = 0;
             label5.Text = "Kraj razmjene:";
             // 
-            // dataGridView1
+            // dgvPodaci
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Univerzitet, Pocetak, Kraj, ECTS, Okoncana, Obrisi });
-            dataGridView1.Location = new Point(12, 56);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(857, 244);
-            dataGridView1.TabIndex = 5;
+            dgvPodaci.AllowUserToAddRows = false;
+            dgvPodaci.AllowUserToDeleteRows = false;
+            dgvPodaci.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPodaci.Columns.AddRange(new DataGridViewColumn[] { Univerzitet, Pocetak, Kraj, ECTS, Okoncana, Obrisi });
+            dgvPodaci.Location = new Point(12, 56);
+            dgvPodaci.Name = "dgvPodaci";
+            dgvPodaci.ReadOnly = true;
+            dgvPodaci.Size = new Size(857, 244);
+            dgvPodaci.TabIndex = 5;
             // 
             // Univerzitet
             // 
@@ -208,7 +209,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(881, 459);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvPodaci);
             Controls.Add(dtpKraj);
             Controls.Add(dtpPocetak);
             Controls.Add(btnSacuvaj);
@@ -223,7 +224,7 @@
             Name = "frmRazmjene";
             Text = "frmRazmjene";
             Load += frmRazmjene_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPodaci).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -241,7 +242,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private DataGridView dataGridView1;
+        private DataGridView dgvPodaci;
         private DataGridViewTextBoxColumn Univerzitet;
         private DataGridViewTextBoxColumn Pocetak;
         private DataGridViewTextBoxColumn Kraj;
