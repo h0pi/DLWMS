@@ -96,6 +96,7 @@
             cmbDrzava.Name = "cmbDrzava";
             cmbDrzava.Size = new Size(186, 23);
             cmbDrzava.TabIndex = 1;
+            cmbDrzava.SelectionChangeCommitted += cmbDrzava_SelectionChangeCommitted;
             // 
             // tbEcts
             // 
@@ -288,7 +289,7 @@
             btnGenerisi.TabIndex = 3;
             btnGenerisi.Text = "Generisi>>>>";
             btnGenerisi.UseVisualStyleBackColor = true;
-            btnGenerisi.Click += btnSacuvaj_Click;
+            btnGenerisi.Click += btnGenerisi_Click;
             // 
             // tbBrRazmjena
             // 
@@ -320,7 +321,6 @@
             btnPotvrda.TabIndex = 3;
             btnPotvrda.Text = "Potvrda";
             btnPotvrda.UseVisualStyleBackColor = true;
-            btnPotvrda.Click += btnSacuvaj_Click;
             // 
             // frmRazmjene
             // 
