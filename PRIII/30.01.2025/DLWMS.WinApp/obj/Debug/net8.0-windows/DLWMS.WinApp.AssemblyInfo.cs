@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DLWMS.WinApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50500b5bb8e360239a1868977ae793d932d97d64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6017179f836fb3e01c05e79ee30badcdb9f8a29")]
 [assembly: System.Reflection.AssemblyProductAttribute("DLWMS.WinApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DLWMS.WinApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

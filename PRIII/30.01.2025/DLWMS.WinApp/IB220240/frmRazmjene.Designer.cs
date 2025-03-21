@@ -46,7 +46,19 @@
             ECTS = new DataGridViewTextBoxColumn();
             Okoncana = new DataGridViewCheckBoxColumn();
             Obrisi = new DataGridViewButtonColumn();
+            groupBox1 = new GroupBox();
+            label6 = new Label();
+            cmbUni = new ComboBox();
+            label8 = new Label();
+            label9 = new Label();
+            label7 = new Label();
+            btnGenerisi = new Button();
+            tbBrRazmjena = new TextBox();
+            tbInfo = new TextBox();
+            tbBrKredita = new TextBox();
+            btnPotvrda = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvPodaci).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -154,6 +166,7 @@
             dgvPodaci.ReadOnly = true;
             dgvPodaci.Size = new Size(857, 244);
             dgvPodaci.TabIndex = 5;
+            dgvPodaci.CellContentClick += dgvPodaci_CellContentClick;
             // 
             // Univerzitet
             // 
@@ -204,14 +217,121 @@
             Obrisi.Text = "Obrisi";
             Obrisi.UseColumnTextForButtonValue = true;
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(cmbUni);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(btnGenerisi);
+            groupBox1.Controls.Add(tbBrRazmjena);
+            groupBox1.Controls.Add(tbInfo);
+            groupBox1.Controls.Add(tbBrKredita);
+            groupBox1.Location = new Point(12, 342);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(857, 171);
+            groupBox1.TabIndex = 6;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Generator razmjena";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(6, 19);
+            label6.Name = "label6";
+            label6.Size = new Size(66, 15);
+            label6.TabIndex = 0;
+            label6.Text = "Univerzitet:";
+            // 
+            // cmbUni
+            // 
+            cmbUni.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbUni.FormattingEnabled = true;
+            cmbUni.Location = new Point(6, 37);
+            cmbUni.Name = "cmbUni";
+            cmbUni.Size = new Size(186, 23);
+            cmbUni.TabIndex = 1;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(6, 63);
+            label8.Name = "label8";
+            label8.Size = new Size(82, 15);
+            label8.TabIndex = 0;
+            label8.Text = "Broj razmjena:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(209, 19);
+            label9.Name = "label9";
+            label9.Size = new Size(31, 15);
+            label9.TabIndex = 0;
+            label9.Text = "Info:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(102, 63);
+            label7.Name = "label7";
+            label7.Size = new Size(70, 15);
+            label7.TabIndex = 0;
+            label7.Text = "Broj kredita:";
+            // 
+            // btnGenerisi
+            // 
+            btnGenerisi.Location = new Point(6, 110);
+            btnGenerisi.Name = "btnGenerisi";
+            btnGenerisi.Size = new Size(186, 23);
+            btnGenerisi.TabIndex = 3;
+            btnGenerisi.Text = "Generisi>>>>";
+            btnGenerisi.UseVisualStyleBackColor = true;
+            btnGenerisi.Click += btnSacuvaj_Click;
+            // 
+            // tbBrRazmjena
+            // 
+            tbBrRazmjena.Location = new Point(6, 81);
+            tbBrRazmjena.Name = "tbBrRazmjena";
+            tbBrRazmjena.Size = new Size(90, 23);
+            tbBrRazmjena.TabIndex = 2;
+            // 
+            // tbInfo
+            // 
+            tbInfo.Location = new Point(209, 37);
+            tbInfo.Multiline = true;
+            tbInfo.Name = "tbInfo";
+            tbInfo.Size = new Size(642, 96);
+            tbInfo.TabIndex = 2;
+            // 
+            // tbBrKredita
+            // 
+            tbBrKredita.Location = new Point(102, 81);
+            tbBrKredita.Name = "tbBrKredita";
+            tbBrKredita.Size = new Size(92, 23);
+            tbBrKredita.TabIndex = 2;
+            // 
+            // btnPotvrda
+            // 
+            btnPotvrda.Location = new Point(767, 306);
+            btnPotvrda.Name = "btnPotvrda";
+            btnPotvrda.Size = new Size(102, 23);
+            btnPotvrda.TabIndex = 3;
+            btnPotvrda.Text = "Potvrda";
+            btnPotvrda.UseVisualStyleBackColor = true;
+            btnPotvrda.Click += btnSacuvaj_Click;
+            // 
             // frmRazmjene
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(881, 459);
+            ClientSize = new Size(881, 525);
+            Controls.Add(groupBox1);
             Controls.Add(dgvPodaci);
             Controls.Add(dtpKraj);
             Controls.Add(dtpPocetak);
+            Controls.Add(btnPotvrda);
             Controls.Add(btnSacuvaj);
             Controls.Add(tbEcts);
             Controls.Add(cmbDrzava);
@@ -225,6 +345,8 @@
             Text = "frmRazmjene";
             Load += frmRazmjene_Load;
             ((System.ComponentModel.ISupportInitialize)dgvPodaci).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -249,5 +371,16 @@
         private DataGridViewTextBoxColumn ECTS;
         private DataGridViewCheckBoxColumn Okoncana;
         private DataGridViewButtonColumn Obrisi;
+        private GroupBox groupBox1;
+        private Label label6;
+        private ComboBox cmbUni;
+        private Label label8;
+        private Label label7;
+        private Button btnGenerisi;
+        private TextBox tbBrRazmjena;
+        private TextBox tbInfo;
+        private TextBox tbBrKredita;
+        private Label label9;
+        private Button btnPotvrda;
     }
 }

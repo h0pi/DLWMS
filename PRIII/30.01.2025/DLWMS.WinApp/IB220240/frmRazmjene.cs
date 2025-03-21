@@ -2,6 +2,7 @@
 using DLWMS.Data.IB220240;
 using DLWMS.Infrastructure;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace DLWMS.WinApp.IB220240
     {
         private Student student;
         DLWMSContext db = new DLWMSContext();
+        List<Razmjene> razmjene = new List<Razmjene>();
         public frmRazmjene(Student student)
         {
             InitializeComponent();
@@ -29,6 +31,7 @@ namespace DLWMS.WinApp.IB220240
         {
             this.Text = $"Razmjene studenta {student}";
             cmbDrzava.DataSource = db.Drzave.ToList();
+            cmbUni.DataSource = db.Univerziteti.ToList();
             var drzava = cmbDrzava.SelectedItem as Drzava;
             cmbUniverzitet.DataSource = db.Univerziteti.Where(x => x.Drzava == drzava).ToList();
             UcitajPodatke();
@@ -36,7 +39,8 @@ namespace DLWMS.WinApp.IB220240
 
         private void UcitajPodatke()
         {
-            dgvPodaci.DataSource = db.Razmjene.Where(x => x.StudentId == student.Id).ToList();
+            razmjene = db.Razmjene.Where(x => x.StudentId == student.Id).ToList();
+            dgvPodaci.DataSource = razmjene;
         }
 
         private void btnSacuvaj_Click(object sender, EventArgs e)
@@ -50,7 +54,7 @@ namespace DLWMS.WinApp.IB220240
                 {
                     StudentId = student.Id,
                     UniverzitetId = uni.Id,
-                    ECTS=int.Parse(tbEcts.Text),
+                    ECTS = int.Parse(tbEcts.Text),
                     Pocetak = dtmOd,
                     Kraj = dtmDo,
                     Okoncana = dtmDo > DateTime.Now ? false : true
@@ -65,6 +69,7 @@ namespace DLWMS.WinApp.IB220240
         {
             var dtmOd = dtpPocetak.Value;
             var dtmDo = dtpKraj.Value;
+            var imaLi = db.Razmjene.Where(x => x.StudentId == student.Id && ((dtmOd >= x.Pocetak && dtmOd < x.Kraj) || (dtmDo > x.Pocetak && dtmDo <= x.Kraj) || (dtmOd <= x.Pocetak && dtmDo >= x.Kraj))).ToList();
             try
             {
                 int ects = int.Parse(tbEcts.Text);
@@ -74,8 +79,37 @@ namespace DLWMS.WinApp.IB220240
                 MessageBox.Show("Unesite validan broj ECTS bodova!");
                 return false;
             }
-            
+            if (dtmOd > dtmDo)
+            {
+                MessageBox.Show("Datum pocetka ne moze biti veci od datuma kraja razmjene!");
+                return false;
+            }
+            if (imaLi.Count>0)
+            {
+                MessageBox.Show("Razmjena u ovom periodu vec postoji!");
+                return false;
+            }
             return true;
+        }
+
+        private void dgvPodaci_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 5)
+            {
+                var razmjena = razmjene[e.RowIndex];
+                var result = MessageBox.Show($"Da li sigurno zelite obrisati podatke o razmjeni {student}?", "Upit", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    db.Razmjene.Remove(razmjene[e.RowIndex]);
+                    db.SaveChanges();
+                    MessageBox.Show("Uspjesno obrisano!");
+                    UcitajPodatke();
+                }
+                else
+                {
+                    return;
+                }
+            }
         }
     }
 }

@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54A7F459-4553-4585-9FD3-F80B0AF462E9}|DLWMS.Data\\DLWMS.Data.csproj|c:\\users\\ammar\\dlwms\\priii\\30.01.2025\\dlwms.data\\ib220240\\razmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54A7F459-4553-4585-9FD3-F80B0AF462E9}|DLWMS.Data\\DLWMS.Data.csproj|solutionrelative:dlwms.data\\ib220240\\razmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{54A7F459-4553-4585-9FD3-F80B0AF462E9}|DLWMS.Data\\DLWMS.Data.csproj|c:\\users\\ammar\\dlwms\\priii\\30.01.2025\\dlwms.data\\ib220240\\razmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A7F459-4553-4585-9FD3-F80B0AF462E9}|DLWMS.Data\\DLWMS.Data.csproj|solutionrelative:dlwms.data\\ib220240\\razmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Razmjene.cs",
               "DocumentMoniker": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\IB220240\\Razmjene.cs",
               "RelativeDocumentMoniker": "DLWMS.Data\\IB220240\\Razmjene.cs",
@@ -53,21 +53,22 @@
               "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
               "ToolTip": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
               "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAgwEwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwFwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T13:07:35.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "frmRazmjene.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
               "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
               "ToolTip": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs [Design]",
               "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:07:28.892Z"
+              "WhenOpened": "2025-03-21T21:30:54.58Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
