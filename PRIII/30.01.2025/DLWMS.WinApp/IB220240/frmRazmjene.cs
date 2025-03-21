@@ -1,4 +1,5 @@
 ﻿using DLWMS.Data;
+using DLWMS.Data.IB220240;
 using DLWMS.Infrastructure;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using System;
@@ -21,6 +22,7 @@ namespace DLWMS.WinApp.IB220240
         {
             InitializeComponent();
             this.student = student;
+            dgvPodaci.AutoGenerateColumns = false;
         }
 
         private void frmRazmjene_Load(object sender, EventArgs e)
@@ -34,14 +36,28 @@ namespace DLWMS.WinApp.IB220240
 
         private void UcitajPodatke()
         {
-            throw new NotImplementedException();
+            dgvPodaci.DataSource = db.Razmjene.Where(x => x.StudentId == student.Id).ToList();
         }
 
         private void btnSacuvaj_Click(object sender, EventArgs e)
         {
+            var dtmOd = dtpPocetak.Value;
+            var dtmDo = dtpKraj.Value;
+            var uni = cmbUniverzitet.SelectedItem as Univerziteti;
             if (Validacija())
             {
-
+                var nova = new Razmjene
+                {
+                    StudentId = student.Id,
+                    UniverzitetId = uni.Id,
+                    ECTS=int.Parse(tbEcts.Text),
+                    Pocetak = dtmOd,
+                    Kraj = dtmDo,
+                    Okoncana = dtmDo > DateTime.Now ? false : true
+                };
+                db.Razmjene.Add(nova);
+                db.SaveChanges();
+                UcitajPodatke();
             }
         }
 
@@ -56,8 +72,9 @@ namespace DLWMS.WinApp.IB220240
             catch (Exception)
             {
                 MessageBox.Show("Unesite validan broj ECTS bodova!");
-                throw;
+                return false;
             }
+            
             return true;
         }
     }

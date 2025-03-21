@@ -10,3 +10,16 @@ C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-ex
 C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Data\obj\Debug\net8.0\refint\DLWMS.Data.dll
 C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.pdb
 C:\Users\Ammar\Desktop\PR3\cs-winforms-exam-template-2024-25-main\cs-winforms-exam-template-2024-25-main\DLWMS.Data\obj\Debug\net8.0\ref\DLWMS.Data.dll
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\bin\Debug\net8.0\DLWMS.Data.deps.json
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\bin\Debug\net8.0\DLWMS.Data.dll
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\bin\Debug\net8.0\DLWMS.Data.pdb
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.csproj.AssemblyReference.cache
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.AssemblyInfoInputs.cache
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.AssemblyInfo.cs
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.sourcelink.json
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.dll
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\refint\DLWMS.Data.dll
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\DLWMS.Data.pdb
+C:\Users\Ammar\DLWMS\PRIII\30.01.2025\DLWMS.Data\obj\Debug\net8.0\ref\DLWMS.Data.dll

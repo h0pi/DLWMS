@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DLWMS.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeb6dce8deb14ca88bc88069c70e27a8f9a694bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50500b5bb8e360239a1868977ae793d932d97d64")]
 [assembly: System.Reflection.AssemblyProductAttribute("DLWMS.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DLWMS.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

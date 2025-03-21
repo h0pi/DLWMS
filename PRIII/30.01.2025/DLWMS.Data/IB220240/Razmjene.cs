@@ -13,6 +13,7 @@ namespace DLWMS.Data.IB220240
         public Student Student { get; set; }
         public int UniverzitetId { get; set; }
         public Univerziteti Univerzitet { get; set; }
+        public int ECTS { get; set; }
         public DateTime Pocetak { get; set; }
         public DateTime Kraj { get; set; }
         public bool Okoncana { get; set; }
