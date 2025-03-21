@@ -10,8 +10,13 @@
         public string BrojIndeksa { get; set; }
         public string Lozinka { get; set; }
         public int GradId { get; set; }
+        public Grad Grad { get; set; }
         public int SpolId { get; set; }
         public byte[] Slika { get; set; }
-        public bool Aktivan { get; set; }      
+        public bool Aktivan { get; set; }
+        public override string ToString()
+        {
+            return $"{Ime} {Prezime}";
+        }
     }
 }

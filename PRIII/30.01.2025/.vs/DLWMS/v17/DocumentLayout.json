@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammar\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "DLWMS.Data\\IB220240\\Razmjene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T17:56:02.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T17:56:02.789Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "ToolTip": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs [Design]",
               "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:30:54.58Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-21T21:30:54.58Z"
             },
             {
               "$type": "Document",
