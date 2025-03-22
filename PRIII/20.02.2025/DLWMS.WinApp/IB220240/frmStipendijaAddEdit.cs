@@ -28,11 +28,11 @@ namespace DLWMS.WinApp.IB220240
         private void frmStipendijaAddEdit_Load(object sender, EventArgs e)
         {
             cmbStudenti.DataSource = db.Studenti.ToList();
-            //cmbStudenti.ValueMember = "Id";
-            //cmbStudenti.DisplayMember ="Ime" ;
+           
             if(studentiStipendije!=null)
             {
-                cmbStudenti.SelectedItem = studentiStipendije.Student;
+                cmbStudenti.SelectedIndex = studentiStipendije.StudentId-1;
+                cmbStudenti.Enabled = false;
             }
                 cmbGodina.SelectedIndex = 0;
             var godina = int.Parse(cmbGodina.Text);
@@ -61,7 +61,6 @@ namespace DLWMS.WinApp.IB220240
             }
             else
             {
-                
                 var stipendija = cmbStipendija.SelectedItem as StipendijeGodine;
                 List<StudentiStipendije> imali = db.StudentiStipendije.Where(x => x.StipendijeGodine == stipendija ).ToList();
                 if (imali.Count == 0)

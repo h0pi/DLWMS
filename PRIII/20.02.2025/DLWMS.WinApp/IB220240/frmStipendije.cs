@@ -16,7 +16,7 @@ namespace DLWMS.WinApp.IB220240
     public partial class frmStipendije : Form
     {
         DLWMSContext db = new DLWMSContext();
-        List<StipendijeGodine> stipendijeGodines=new List<StipendijeGodine> { };
+        List<StipendijeGodine> stipendijeGodines = new List<StipendijeGodine> { };
         public frmStipendije()
         {
             InitializeComponent();
@@ -50,8 +50,8 @@ namespace DLWMS.WinApp.IB220240
 
         private void UcitajPodatke()
         {
-            stipendijeGodines=db.StipendijeGodine.ToList();
-            dgvPodaci.DataSource= stipendijeGodines;
+            stipendijeGodines = db.StipendijeGodine.ToList();
+            dgvPodaci.DataSource = stipendijeGodines;
             foreach (DataGridViewRow row in dgvPodaci.Rows)
             {
                 //if (row.Cells["Godina"].Value != null && row.Cells["Iznos"].Value != null)
@@ -73,9 +73,9 @@ namespace DLWMS.WinApp.IB220240
 
         private bool Validiraj()
         {
-            int godina=int.Parse(cmbGodina.Text);
+            int godina = int.Parse(cmbGodina.Text);
             var stipendija = cmbStipendija.SelectedItem as Stipendije;
-            var lista=db.StipendijeGodine.Where(x=>x.Godina==godina&&stipendija.Id==x.StipendijaId).ToList();
+            var lista = db.StipendijeGodine.Where(x => x.Godina == godina && stipendija.Id == x.StipendijaId).ToList();
             try
             {
                 var km = int.Parse(tbIznos.Text);
@@ -83,12 +83,19 @@ namespace DLWMS.WinApp.IB220240
             catch (Exception)
             {
                 MessageBox.Show("Unesite validan iznos stipendije!!");
-                return false ;
+                return false;
             }
-            if (lista.Count > 0) {
+            if (lista.Count > 0)
+            {
                 MessageBox.Show("Ova stipendija za ovu godinu je vec dodata!");
-                return false; }
+                return false;
+            }
             return true;
+        }
+
+        private async void btnGenerisi_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
