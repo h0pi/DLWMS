@@ -16,6 +16,7 @@ namespace DLWMS.WinApp.IB220240
     public partial class frmStipendije : Form
     {
         DLWMSContext db = new DLWMSContext();
+        List<StipendijeGodine> stipendijeGodines=new List<StipendijeGodine> { };
         public frmStipendije()
         {
             InitializeComponent();
@@ -38,7 +39,7 @@ namespace DLWMS.WinApp.IB220240
                 var nova = new StipendijeGodine
                 {
                     Godina = godina,
-                    StipendijaId = stipendija.Id,
+                    Stipendija = stipendija,
                     Iznos = int.Parse(tbIznos.Text)
                 };
                 db.StipendijeGodine.Add(nova);
@@ -49,7 +50,25 @@ namespace DLWMS.WinApp.IB220240
 
         private void UcitajPodatke()
         {
-            throw new NotImplementedException();
+            stipendijeGodines=db.StipendijeGodine.ToList();
+            dgvPodaci.DataSource= stipendijeGodines;
+            foreach (DataGridViewRow row in dgvPodaci.Rows)
+            {
+                //if (row.Cells["Godina"].Value != null && row.Cells["Iznos"].Value != null)
+                {
+                    int godina = Convert.ToInt32(row.Cells["Godina"].Value);
+                    decimal iznos = Convert.ToDecimal(row.Cells["Iznos"].Value);
+
+                    // Broj prošlih mjeseci
+                    int mjeseci = (godina == DateTime.Now.Year) ? DateTime.Now.Month - 1 : 12;
+
+                    // Proizvod iznosa i mjeseci
+                    row.Cells["Ukupno"].Value = iznos * mjeseci;
+
+                    // Checkbox uvijek postavljen na true
+                    row.Cells["Aktivna"].Value = true;
+                }
+            }
         }
 
         private bool Validiraj()

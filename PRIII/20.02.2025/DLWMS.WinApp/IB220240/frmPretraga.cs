@@ -25,7 +25,8 @@ namespace DLWMS.WinApp.IB220240
         {
             this.Text = "Broj prikazanih studenata: 0";
             cmbGodina.SelectedIndex = 0;
-            cmbStipendija.DataSource = db.Stipendije.ToList();
+            var godina= int.Parse(cmbGodina.Text);
+            cmbStipendija.DataSource = db.StipendijeGodine.Where(x=>x.Godina==godina).ToList();
         }
 
         private void btnStipendije_Click(object sender, EventArgs e)
