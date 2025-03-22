@@ -1,5 +1,8 @@
-﻿using DLWMS.Data.IB220240;
+﻿using DLWMS.Data;
+using DLWMS.Data.IB220240;
 using DLWMS.Infrastructure;
+using DocumentFormat.OpenXml.InkML;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -95,7 +98,61 @@ namespace DLWMS.WinApp.IB220240
 
         private async void btnGenerisi_Click(object sender, EventArgs e)
         {
+            if (dgvPodaci.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Odaberite stipendiju iz liste!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            var odabraniRed = dgvPodaci.SelectedRows[0]; // Uzimamo prvi selektovani red
+
+            var stipendijaGodina = (StipendijeGodine)odabraniRed.DataBoundItem; // Stipendija koja je odabrana u dgv
+
+            var studenti = db.Studenti.ToList();
+
+            await Task.Run(() => GenerisiStipendije(studenti, stipendijaGodina));
+
+            MessageBox.Show("Generisanje stipendija završeno!", "Info", MessageBoxButtons.OK);
         }
+
+        private void GenerisiStipendije(List<Student> studenti, StipendijeGodine stipendijaGodina)
+        {
+            for (int i = 0; i < studenti.Count; ++i)
+            {
+                var stud = studenti[i];
+
+                if (!PostojiStipendija(stud, stipendijaGodina))
+                {
+                    var novaStipendija = new StudentiStipendije
+                    {
+                        StudentId = stud.Id,
+                        StipendijeGodineId = stipendijaGodina.Id,
+                    };
+
+                    Action ac = () =>
+                    {
+                        tbInfo.Text += $"{i+1}. {stipendijaGodina.Stipendija.Naziv} u iznosu od {stipendijaGodina.Iznos} dodata {stud}{Environment.NewLine}";
+                        tbInfo.SelectionStart = tbInfo.Text.Length;
+                        tbInfo.ScrollToCaret();
+                    };
+                    BeginInvoke(ac);
+                    db.StudentiStipendije.Add(novaStipendija);
+                    db.SaveChanges(); // Čuvanje nakon svake promjene
+                }
+
+                Thread.Sleep(300); 
+            }
+        }
+        private bool PostojiStipendija(Student student, StipendijeGodine stipendija)
+        {
+            
+            var lista = db.StudentiStipendije.Where(x => x.Student == student && stipendija.Id == x.StipendijeGodineId).ToList();
+            if (lista.Count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }
