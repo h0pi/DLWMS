@@ -62,6 +62,7 @@
             cmbGodina.Name = "cmbGodina";
             cmbGodina.Size = new Size(121, 23);
             cmbGodina.TabIndex = 1;
+            cmbGodina.SelectionChangeCommitted += cmbGodina_SelectionChangeCommitted;
             // 
             // label2
             // 
@@ -80,6 +81,7 @@
             cmbStipendija.Name = "cmbStipendija";
             cmbStipendija.Size = new Size(154, 23);
             cmbStipendija.TabIndex = 1;
+            cmbStipendija.SelectionChangeCommitted += cmbStipendija_SelectionChangeCommitted;
             // 
             // btnStipendije
             // 
@@ -99,6 +101,7 @@
             btnDodaj.TabIndex = 2;
             btnDodaj.Text = "Dodaj Stipendiju";
             btnDodaj.UseVisualStyleBackColor = true;
+            btnDodaj.Click += btnDodaj_Click;
             // 
             // dgvPodaci
             // 
@@ -111,6 +114,8 @@
             dgvPodaci.ReadOnly = true;
             dgvPodaci.Size = new Size(960, 313);
             dgvPodaci.TabIndex = 3;
+            dgvPodaci.CellContentClick += dgvPodaci_CellContentClick;
+            dgvPodaci.CellContentDoubleClick += dgvPodaci_CellContentDoubleClick;
             // 
             // Student
             // 

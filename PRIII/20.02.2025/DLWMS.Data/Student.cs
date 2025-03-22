@@ -16,7 +16,7 @@
         public bool Aktivan { get; set; }
         public override string ToString()
         {
-            return $"{Ime} {Prezime}";
+            return $"({BrojIndeksa}) {Ime} {Prezime}";
         }
     }
 }

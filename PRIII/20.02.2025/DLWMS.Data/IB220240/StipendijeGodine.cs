@@ -15,7 +15,7 @@ namespace DLWMS.Data.IB220240
         public int Iznos { get; set; }
         public override string ToString()
         {
-            return Stipendija.Naziv; 
+            return Stipendija.Naziv;
         }
     }
 }
