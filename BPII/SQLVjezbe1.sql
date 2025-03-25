@@ -156,9 +156,11 @@ select *
 from Narudzbe.StavkeNarudzbe
 where OrderID=3000
 -- 22. U tabeli StavkeNarduzbe dodati izračunatu kolonu CijeliDio(broj ispred decimalnog zareza) u kojoj će biti cijeli dio iz kolone UnitPrice
-
+alter table Narudzbe.StavkeNarudzbe
+add CijeliDio as floor(UnitPrice)
 -- 23. U tabeli StavkeNarduzbe kreirati ograničenje na koloni Discount kojim će se onemogućiti unos vrijednosti manjih od 0.
-
+alter table Narudzbe.StavkeNarudzbe
+add constraint CK_StavkeNarudzbe_Discount check(Discount between 0 and 1)
 -- 24. U tabelu StavkeNarudzbe insertovati novi zapis (potrebno je testirati postavljeno ograničenje)
 
 -- 25. U šemu Narudzbe dodati tabelu sa sljedećom strukturom:
