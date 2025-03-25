@@ -143,7 +143,18 @@ alter table Narudzbe.StavkeNarudzbe
 add Ukupno decimal(8,2)
 
 -- 21. Izvršiti update kreirane kolone kao umnožak kolona Quantity i UnitPrice.
+UPDATE Narudzbe.StavkeNarudzbe
+SET Ukupno = Quantity * UnitPrice --Update-a samo vec dodane kolone tj. mora se pozvati svaki put kad se doda novi zapis
 
+alter table Narudzbe.StavkeNarudzbe 
+add Ukupno2 as (ROUND(Quantity * UnitPrice, 2)) --Automatski se racuna i update-a kolona nakon dodavanja novog zapisa
+
+insert into Narudzbe.StavkeNarudzbe(OrderID, ProductID, UnitPrice, Quantity, Discount)
+values (3000, 11, 15, 2, 0) 
+
+select * 
+from Narudzbe.StavkeNarudzbe
+where OrderID=3000
 -- 22. U tabeli StavkeNarduzbe dodati izračunatu kolonu CijeliDio(broj ispred decimalnog zareza) u kojoj će biti cijeli dio iz kolone UnitPrice
 
 -- 23. U tabeli StavkeNarduzbe kreirati ograničenje na koloni Discount kojim će se onemogućiti unos vrijednosti manjih od 0.
