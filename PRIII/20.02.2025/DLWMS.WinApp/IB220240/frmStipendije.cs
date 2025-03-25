@@ -57,18 +57,14 @@ namespace DLWMS.WinApp.IB220240
             dgvPodaci.DataSource = stipendijeGodines;
             foreach (DataGridViewRow row in dgvPodaci.Rows)
             {
-                //if (row.Cells["Godina"].Value != null && row.Cells["Iznos"].Value != null)
                 {
                     int godina = Convert.ToInt32(row.Cells["Godina"].Value);
                     decimal iznos = Convert.ToDecimal(row.Cells["Iznos"].Value);
 
-                    // Broj prošlih mjeseci
                     int mjeseci = (godina == DateTime.Now.Year) ? DateTime.Now.Month - 1 : 12;
 
-                    // Proizvod iznosa i mjeseci
                     row.Cells["Ukupno"].Value = iznos * mjeseci;
 
-                    // Checkbox uvijek postavljen na true
                     row.Cells["Aktivna"].Value = true;
                 }
             }
@@ -145,7 +141,6 @@ namespace DLWMS.WinApp.IB220240
         }
         private bool PostojiStipendija(Student student, StipendijeGodine stipendija)
         {
-            
             var lista = db.StudentiStipendije.Where(x => x.Student == student && stipendija.Id == x.StipendijeGodineId).ToList();
             if (lista.Count > 0)
             {
