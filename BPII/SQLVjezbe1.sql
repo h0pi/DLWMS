@@ -139,6 +139,8 @@ select *
 into Narudzbe.StavkeNarudzbe
 from Northwind.dbo.[Order Details]
 -- 20. U tabeli StavkeNarudzbe dodati standardnu kolonu ukupno tipa decimalni broj (8,2).
+alter table Narudzbe.StavkeNarudzbe 
+add Ukupno decimal(8,2)
 
 -- 21. Izvršiti update kreirane kolone kao umnožak kolona Quantity i UnitPrice.
 
