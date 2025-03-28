@@ -168,18 +168,44 @@ add constraint CK_StavkeNarudzbe_Discount check(Discount between 0 and 1)
 		--• KategorijaID, cjelobrojna vrijednost, primarni ključ i autoinkrement
 		--• NazivKategorije, 15 UNICODE znakova (obavezan unos)
 		--• Opis, tekstualan UNICODE tip podatka
+create table Narudzbe.Kategorije
+(
+	KategorijaID int constraint PK_Kategorije primary key identity(1, 1),
+	Naziv nvarchar(15) NOT NULL,
+	Opis ntext
+)
 
 -- 26. U kreiranu tabelu izvršiti insertovanje podataka iz tabele Categories baze Northwind
 
+set identity_insert Narudzbe.Kategorije on
+insert into Narudzbe.Kategorije(KategorijaID, Naziv, Opis)
+select c.CategoryID, c.CategoryName, c.Description
+from Northwind.dbo.Categories as c
+set identity_insert Narudzbe.Kategorije off
+
 -- 27. U tabelu Kategorije insertovati novu kategoriju pod nazivom „Ncategory“
+
+insert into Narudzbe.Kategorije(Naziv)
+values ('Ncategory')
 
 -- 28. Kreirati upit kojim će se prikazati sve kategorije
 
+select *
+from Narudzbe.Kategorije
+
 -- 29. Izvršiti update zapisa u tabeli Kategorije na mjestima gdje Opis kategorije nije dodan pohraniti vrijednost „bez opisa“
+
+update Narudzbe.Kategorije
+set Opis='bez opisa'
+where Opis is null
+
+alter table Narudzbe.Kategorije
+add constraint DF_Kategorije_Opis default 'bez opis' for Opis
 
 -- 30. Izvršiti brisanje svih kategorija
 
-
+delete Narudzbe.Kategorije
+where KategorijaID = 9
 
 -- ::Primjer ispitnog DDL i INSERT zadatka::
 -- 1. U šemu Narudzbe dodati tabelu sa sljedećom strukturom:
