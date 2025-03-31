@@ -1,5 +1,5 @@
 ﻿using FIT.Data;
-
+using FIT.Data.IB220240;
 using Microsoft.EntityFrameworkCore;
 
 using System.Configuration;
@@ -21,6 +21,11 @@ namespace FIT.Infrastructure
             optionsBuilder.UseSqlite(dbPutanja);
         }
     
+        public DbSet<Semestri> Semestri { get; set; }
+        public DbSet<Drzave> Drzave { get; set; }
+        public DbSet<Gradovi> Gradovi { get; set; }
+        public DbSet<Predmeti> Predmeti { get; set; }
+        public DbSet<PolozeniPredmeti> PolozeniPredmeti { get; set; }
         public DbSet<Student> Studenti { get; set; }
 
     }
