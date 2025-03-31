@@ -15,7 +15,7 @@ namespace DLWMS.WinApp.IB220240
 {
     public partial class frmPretraga : Form
     {
-        DLWMSContext db = new DLWMSContext();
+        private readonly DLWMSContext db = Shared.DLWMSContext;
         List<StudentiStipendije> studentiStipendijes = new List<StudentiStipendije>();
         public frmPretraga()
         {

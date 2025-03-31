@@ -18,7 +18,7 @@ namespace DLWMS.WinApp.IB220240
 {
     public partial class frmStipendije : Form
     {
-        DLWMSContext db = new DLWMSContext();
+        private readonly DLWMSContext db = Shared.DLWMSContext;
         List<StipendijeGodine> stipendijeGodines = new List<StipendijeGodine> { };
         public frmStipendije()
         {

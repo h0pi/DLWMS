@@ -16,7 +16,7 @@ namespace DLWMS.WinApp.IB220240
 {
     public partial class frmStipendijaAddEdit : Form
     {
-        DLWMSContext db = new DLWMSContext();
+        private readonly DLWMSContext db = Shared.DLWMSContext;
         private StudentiStipendije studentiStipendije;
 
         public frmStipendijaAddEdit(StudentiStipendije studentiStipendije)
