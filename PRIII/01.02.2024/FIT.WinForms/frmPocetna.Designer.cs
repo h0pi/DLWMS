@@ -72,6 +72,7 @@
             btnDrzave.TabIndex = 2;
             btnDrzave.Text = "Drzave i gradovi";
             btnDrzave.UseVisualStyleBackColor = true;
+            btnDrzave.Click += btnDrzave_Click;
             // 
             // frmPocetna
             // 

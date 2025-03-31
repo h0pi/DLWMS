@@ -34,7 +34,12 @@ namespace FIT.WinForms
 
         private void btnPretraga_Click(object sender, EventArgs e)
         {
-            new frmPretraga().ShowDialog();   
+            new frmPretraga().ShowDialog();
+        }
+
+        private void btnDrzave_Click(object sender, EventArgs e)
+        {
+            new frmDrzave().ShowDialog();
         }
     }
 }
