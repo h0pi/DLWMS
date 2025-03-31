@@ -62,6 +62,7 @@
             btnPretraga.TabIndex = 2;
             btnPretraga.Text = "Pretraga";
             btnPretraga.UseVisualStyleBackColor = true;
+            btnPretraga.Click += btnPretraga_Click;
             // 
             // btnDrzave
             // 
