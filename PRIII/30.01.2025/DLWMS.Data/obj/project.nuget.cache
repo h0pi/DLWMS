@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wF2AB+cWfpA=",
+  "dgSpecHash": "aa+JWrPg7T8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ammar\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
+  "projectFilePath": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.Data\\DLWMS.Data.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ammar\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0\\microsoft.win32.systemevents.9.0.0.nupkg.sha512",
-    "C:\\Users\\Ammar\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512"
+    "C:\\Users\\ammyh\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0\\microsoft.win32.systemevents.9.0.0.nupkg.sha512",
+    "C:\\Users\\ammyh\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }

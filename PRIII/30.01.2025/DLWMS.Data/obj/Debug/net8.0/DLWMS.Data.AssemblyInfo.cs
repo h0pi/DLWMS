@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DLWMS.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50500b5bb8e360239a1868977ae793d932d97d64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+550ea6ec9b3120e82e7c27faefa0c4f32430ccb8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DLWMS.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DLWMS.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

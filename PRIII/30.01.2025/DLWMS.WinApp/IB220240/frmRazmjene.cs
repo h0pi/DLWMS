@@ -18,7 +18,7 @@ namespace DLWMS.WinApp.IB220240
     public partial class frmRazmjene : Form
     {
         private Student student;
-        DLWMSContext db = new DLWMSContext();
+        private readonly DLWMSContext db = Shared.DLWMSContext;
         List<Razmjene> razmjene = new List<Razmjene>();
         public frmRazmjene(Student student)
         {
