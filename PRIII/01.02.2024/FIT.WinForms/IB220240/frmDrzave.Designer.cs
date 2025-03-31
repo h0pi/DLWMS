@@ -54,6 +54,7 @@
             dgvPodaci.Size = new Size(816, 322);
             dgvPodaci.TabIndex = 0;
             dgvPodaci.CellContentClick += dgvPodaci_CellContentClick;
+            dgvPodaci.CellContentDoubleClick += dgvPodaci_CellContentDoubleClick;
             // 
             // Zastava
             // 
@@ -140,7 +141,7 @@
             Controls.Add(btnNovaDrzava);
             Controls.Add(dgvPodaci);
             Name = "frmDrzave";
-            Text = "frmDrzave";
+            Text = "Drzave";
             Load += frmDrzave_Load;
             ((System.ComponentModel.ISupportInitialize)dgvPodaci).EndInit();
             ResumeLayout(false);

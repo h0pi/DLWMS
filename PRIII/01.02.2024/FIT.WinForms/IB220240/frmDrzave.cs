@@ -72,7 +72,15 @@ namespace FIT.WinForms.IB220240
 
         private void dgvPodaci_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex <4)
+            if (e.ColumnIndex == 4)
+            {
+                new frmGradovi(drzave[e.RowIndex]).ShowDialog();
+            }
+        }
+
+        private void dgvPodaci_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex < 4)
             {
                 new frmNovaDrzava(drzave[e.RowIndex]).ShowDialog();
                 UcitajPodatke();

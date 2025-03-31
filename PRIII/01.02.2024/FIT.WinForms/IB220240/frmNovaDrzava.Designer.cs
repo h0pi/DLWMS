@@ -116,7 +116,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "frmNovaDrzava";
-            Text = "frmNovaDrzava";
+            Text = "Podaci o drzavi";
             Load += frmNovaDrzava_Load;
             ((System.ComponentModel.ISupportInitialize)pbZastava).EndInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
