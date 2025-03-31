@@ -15,7 +15,7 @@ namespace DLWMS.WinApp.IB220240
 {
     public partial class frmPretraga : Form
     {
-        DLWMSContext db = new DLWMSContext();
+        private readonly DLWMSContext db = Shared.DLWMSContext;
         List<StudentiStipendije> studentiStipendijes = new List<StudentiStipendije>();
         public frmPretraga()
         {
@@ -36,7 +36,10 @@ namespace DLWMS.WinApp.IB220240
         private void UcitajPodatke()
         {
             var stip = cmbStipendija.SelectedItem as StipendijeGodine;
-            studentiStipendijes = db.StudentiStipendije.Include(x => x.Student).Where(x => x.StipendijeGodineId == stip.Id).ToList();
+            if (stip != null)
+            {
+                studentiStipendijes = db.StudentiStipendije.Include(x => x.Student).Where(x => x.StipendijeGodineId == stip.Id).ToList();
+            }
 
             var tabela = new DataTable();
             tabela.Columns.Add("Student");
@@ -68,6 +71,8 @@ namespace DLWMS.WinApp.IB220240
         private void btnStipendije_Click(object sender, EventArgs e)
         {
             new frmStipendije().ShowDialog();
+            var godina = int.Parse(cmbGodina.Text);
+            cmbStipendija.DataSource = db.StipendijeGodine.Include(x => x.Stipendija).Where(x => x.Godina == godina).ToList();
         }
 
         private void cmbGodina_SelectionChangeCommitted(object sender, EventArgs e)
