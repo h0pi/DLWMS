@@ -16,7 +16,7 @@ namespace DLWMS.WinApp.IB220240
     public partial class frmStudentEdit : Form
     {
         private Student student;
-        DLWMSContext db = new DLWMSContext();
+        private readonly DLWMSContext db = Shared.DLWMSContext;
         public frmStudentEdit(Student student)
         {
             InitializeComponent();
