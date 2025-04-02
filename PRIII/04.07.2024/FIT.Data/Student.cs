@@ -16,9 +16,10 @@ namespace FIT.Data
         public bool Aktivan { get; set; }        
         public int SemestarId { get; set; }
         public Semestri Semestar{ get; set; }
+        public string Spol { get; set; }
         public override string ToString()
         {
-            return $"{Indeks} {Ime} {Prezime}";
+            return $"{Ime} {Prezime}";
         }
     }
 }
