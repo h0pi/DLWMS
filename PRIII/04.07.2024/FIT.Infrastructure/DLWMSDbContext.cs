@@ -25,6 +25,7 @@ namespace FIT.Infrastructure
         public DbSet<Semestri> Semestri { get; set; }
         public DbSet<Student> Studenti { get; set; }
         public DbSet<PolozeniPredmeti> PolozeniPredmeti{ get; set; }
+        public DbSet<StudentiUvjerenja> StudentiUvjerenja { get; set; }
 
     }
 }
