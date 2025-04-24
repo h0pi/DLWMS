@@ -85,7 +85,7 @@ namespace FIT.WinForms.IB220240
         {
             if (e.ColumnIndex == 5)
             {
-                new frmUvjerenja().ShowDialog();
+                new frmUvjerenja(studenti[e.RowIndex]).ShowDialog();
                 UcitajPodatke();
             }
         }
