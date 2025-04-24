@@ -66,6 +66,8 @@ namespace DLWMS.WinApp.IB220240
             }
             dgvPodaci.DataSource = null;
             dgvPodaci.DataSource = tabela;
+            this.Text = $"Broj prikazanih studenata: {studentiStipendijes.Count}";
+            if (studentiStipendijes.Count == 0) MessageBox.Show("Trenutno nema studenata sa ovom stipendijom u bazi");
         }
 
         private void btnStipendije_Click(object sender, EventArgs e)
