@@ -216,7 +216,15 @@ where KategorijaID = 9
 		--• Boja, 15 UNICODE karaktera
 		--• NazivKategorije, 50 UNICODE (obavezan unos)
 		--• Tezina, decimalna vrijednost sa 2 znaka iza zareza
-
+create table Narudzbe.Proizvodi
+(
+	ProizvodID int constraint PK_Proizvodi primary key identity(1, 1),
+	Naziv NVARCHAR(50) NOT NULL,
+    SifraProizvoda NVARCHAR(25) NOT NULL,
+    Boja NVARCHAR(15) NULL,
+    NazivKategorije NVARCHAR(50) NOT NULL,
+    Tezina DECIMAL(10,2) NULL
+)
 -- 2. Iz baze podataka AdventureWorks2017 u tabelu Proizvodi dodati sve proizvode, na mjestima gdje nema pohranjenih podataka o težini zamijeniti vrijednost sa 0
 		--• ProductID -> ProizvodID
 		--• Name -> Naziv
@@ -224,10 +232,17 @@ where KategorijaID = 9
 		--• Color -> Boja
 		--• Name (ProductCategory) -> NazivKategorije
 		--• Weight -> Tezina
-
+--insert into Narudzbe.Proizvodi
+--from 
 -- ::Dodatni zadaci za vježbu::
 -- 1. Kroz SQL kod kreirati bazu podataka ZadaciZaVjezbu2
+create database ZadaciZaVjezbu2
+go 
+use ZadaciZaVjezbu2
 -- 2. U pomenutoj bazi kreirati šemu Prodaja
+go
+create schema Prodaja
+go
 -- 3. U kreiranoj bazi podataka kreirati tabele sa sljedećom strukturom:
 	-- a) Proizvodi
 		--• ProizvodID, cjelobrojna vrijednost, autoinkrement i primarni ključ
@@ -235,14 +250,28 @@ where KategorijaID = 9
 		--• Cijena, novčani tip
 		--• KolicinaNaSkladistu,skraćeni cjelobrojni tip
 		--• Raspolozivost, bit polje (obavezan unos)
-
+create table Prodaja.Proizvodi
+(
+	ProizvodID int constraint PK_Proizvodi primary key identity(1, 1),
+	Naziv nvarchar(40) NOT NULL,
+	Cijena money,
+	KoliicnaNaSkladistu tinyint,
+	Raspolozivost bit NOT NULL,
+)
 	-- b) Kupci
 		--• KupacID, 5 UNICODE fiksna karaktera i primarni ključ
 		--• NazivKompanije, 40 UNICODE karaktera (obavezan unos)
 		--• Ime, 30 UNICODE karaktera
 		--• Telefon, 24 UNICODE karaktera
 		--• Faks, 24 UNICODE karaktera
-
+create table Prodaja.Kupci 
+(
+	KupacID nvarchar(5) constraint PK_Kucpi primary key,
+	NazivKompanije nvarchar(40) NOT NULL,
+	Ime NVARCHAR(30),
+	Telefon nvarchar(24),
+	Faks nvarchar(24)
+)
 	-- c) Narudzbe
 		--• NarudzbaID, cjelobrojna vrijednost, autoinkrement i primarni ključ,
 		--• DatumNarudzbe, polje za unos datuma
@@ -252,7 +281,17 @@ where KategorijaID = 9
 		--• Regija, 15 UNICODE karaktera
 		--• Grad, 15 UNICODE karaktera
 		--• Adresa, 60 UNICODE karaktera
-
+create table Prodaja.Narudzbe
+(
+	NarudzbaID int constraint PK_Narudzbe primary key identity(1, 1),
+	DatumNarudzbe date,
+	DatumPrijema date, 
+	DatumIsporuke date,
+	Drzava nvarchar(15),
+	Regija nvarchar(15),
+	Grad nvarchar(15),
+	Adresa nvarchar(60),
+)
 	-- d) StavkeNarudzbe
 		--• NarudzbaID, cjelobrojna vrijednost, strani ključ
 		--• ProizvodID, cjelobrojna vrijednost, strani ključ
@@ -261,7 +300,16 @@ where KategorijaID = 9
 		--• Popust, realna vrijednost (obavezan unos)
 		--• VrijednostStavki narudžbe (uzeti u obzir i popust)- calculated polje
 		--**Definisati primarni ključ tabele
-
+create table Prodaja.StavkeNarudzbe
+(
+	NarudzbaID int constraint FK_StavkeNarudzbe_Narudzbe foreign key references Prodaja.Narudzbe,
+	ProizvodID int constraint FK_StavkeNarudzbe_Proizvodi foreign key references Prodaja.Proizvodi,
+	constraint PK_StavkeNarudzbe primary key(NarudzbaID, ProizvodID),
+	Cijena money NOT NULL,
+	Kolicina SMALLINT NOT NULL DEFAULT 1,
+    Popust REAL NOT NULL,
+	VrijednostStavki as (Cijena * Kolicina *(1-Popust)) PERSISTED
+)
 -- 4. Iz baze podataka Northwind u svoju bazu podataka prebaciti sljedeće podatke:
 	-- a) U tabelu Proizvodi dodati sve proizvode
 		--• ProductID -> ProizvodID
@@ -269,14 +317,25 @@ where KategorijaID = 9
 		--• UnitPrice -> Cijena
 		--• UnitsInStock -> KolicinaNaSkladistu
 		--• Discontinued -> Raspolozivost
-
+set identity_insert Prodaja.Proizvodi on
+INSERT INTO Prodaja.Proizvodi (ProizvodID, Naziv, Cijena, KoliicnaNaSkladistu, Raspolozivost)
+SELECT 
+    ProductID,
+    ProductName,
+    UnitPrice,
+    UnitsInStock,
+    Discontinued
+FROM Northwind.dbo.Products;
 	-- b) U tabelu Kupci dodati sve kupce
 		--• CustomerID -> KupciID
 		--• CompanyName -> NazivKompanije
 		--• ContactName -> Ime
 		--• Phone -> Telefon
 		--• Fax -> Faks
-
+insert into Prodaja.Kupci (KupacID, NazivKompanije, Ime, Telefon, Faks)
+select 
+	CustomerID, CompanyName, ContactName, Phone, Fax
+FROM Northwind.dbo.Customers;
 	-- c) U tabelu Narudzbe dodati sve narudžbe, na mjestima gdje nema pohranjenih podataka o regiji zamijeniti vrijednost sa nije naznaceno
 		--• OrderID -> NarudzbaID
 		--• OrderDate -> DatumNarudzbe
@@ -286,22 +345,61 @@ where KategorijaID = 9
 		--• ShipRegion -> Regija
 		--• ShipCity -> Grad
 		--• ShipAddress -> Adresa
-
+set identity_insert Prodaja.Narudzbe on
+insert into Prodaja.Narudzbe
+    (DatumNarudzbe, DatumPrijema, DatumIsporuke, Drzava, Regija, Grad, Adresa)
+SELECT 
+    OrderDate,
+    RequiredDate,
+    ShippedDate,
+    ShipCountry,
+    ISNULL(ShipRegion, N'nije naznačeno') AS Regija,
+    ShipCity,
+    ShipAddress
+FROM Northwind.dbo.Orders;
 	-- d) U tabelu StavkeNarudzbe dodati sve stavke narudžbe gdje je količina veća od 4
 		--• OrderID -> NarudzbaID
 		--• ProductID -> ProizvodID
 		--• UnitPrice -> Cijena
 		--• Quantity -> Kolicina
 		--• Discount -> Popust
+INSERT INTO Prodaja.StavkeNarudzbe 
+    (NarudzbaID, ProizvodID, Cijena, Kolicina, Popust)
+SELECT 
+    o.OrderID,
+    o.ProductID,
+    o.UnitPrice,
+    o.Quantity,
+    o.Discount
+FROM [Northwind].[dbo].[Order Details] as o
+WHERE Quantity > 4;
+
+
+--NE RADI KAKO TREBA OVO ZADNJE!!!! 
+
 
 -- 5. Kreirati upit kojim će se prikazati svi proizvodi čija je cijena veća od 100
+GO 
+use Northwind
+
+SELECT *
+FROM Products
+WHERE UnitPrice >100
 
 -- 6. Insert komandom dodati novi proizvod
+INSERT INTO Products 
+    (ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued)
+VALUES 
+    (N'Novi Proizvod', 1, 1, N'10 kutija x 20 kom', 150.00, 50, 0, 10, 0);
 
 -- 7. Dodati novu stavku narudžbe
-
+INSERT INTO [Order Details]
+	(OrderID, ProductID, UnitPrice, Quantity, Discount)
+VALUES
+	(11077, 1, 20, 5, 0)
+	
 -- 8. Izbrisati sve stavke narudžbe gdje je id narudžbe 10248
-
+DELETE FROM [Order Details] WHERE OrderID = 10248
 -- 9. U tabeli Proizvodi kreirati ograničenje na koloni Cijena kojim će se onemogućiti unos vrijednosti manjih od 0,1
 
 -- 10. U tabeli proizvodi dodati izračunatu kolonu pod nazivom potrebnoNaruciti za količinu proizvoda na skladištu ispod 10 potrebno je pohraniti vrijednost „DA“ a u suptornom „NE“.
