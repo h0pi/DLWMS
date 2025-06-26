@@ -40,9 +40,9 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 38);
+            label1.Location = new Point(14, 51);
             label1.Name = "label1";
-            label1.Size = new Size(51, 15);
+            label1.Size = new Size(63, 20);
             label1.TabIndex = 0;
             label1.Text = "Student:";
             // 
@@ -50,17 +50,18 @@
             // 
             cmbStudenti.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbStudenti.FormattingEnabled = true;
-            cmbStudenti.Location = new Point(80, 35);
+            cmbStudenti.Location = new Point(91, 47);
+            cmbStudenti.Margin = new Padding(3, 4, 3, 4);
             cmbStudenti.Name = "cmbStudenti";
-            cmbStudenti.Size = new Size(209, 23);
+            cmbStudenti.Size = new Size(238, 28);
             cmbStudenti.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 75);
+            label2.Location = new Point(14, 100);
             label2.Name = "label2";
-            label2.Size = new Size(48, 15);
+            label2.Size = new Size(60, 20);
             label2.TabIndex = 0;
             label2.Text = "Godina:";
             // 
@@ -69,17 +70,19 @@
             cmbGodina.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbGodina.FormattingEnabled = true;
             cmbGodina.Items.AddRange(new object[] { "2021", "2022", "2023", "2024", "2025" });
-            cmbGodina.Location = new Point(80, 72);
+            cmbGodina.Location = new Point(91, 96);
+            cmbGodina.Margin = new Padding(3, 4, 3, 4);
             cmbGodina.Name = "cmbGodina";
-            cmbGodina.Size = new Size(209, 23);
+            cmbGodina.Size = new Size(238, 28);
             cmbGodina.TabIndex = 1;
+            cmbGodina.SelectionChangeCommitted += cmbGodina_SelectionChangeCommitted;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 111);
+            label3.Location = new Point(14, 148);
             label3.Name = "label3";
-            label3.Size = new Size(62, 15);
+            label3.Size = new Size(79, 20);
             label3.TabIndex = 0;
             label3.Text = "Stipendija:";
             // 
@@ -87,16 +90,18 @@
             // 
             cmbStipendija.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbStipendija.FormattingEnabled = true;
-            cmbStipendija.Location = new Point(80, 108);
+            cmbStipendija.Location = new Point(91, 144);
+            cmbStipendija.Margin = new Padding(3, 4, 3, 4);
             cmbStipendija.Name = "cmbStipendija";
-            cmbStipendija.Size = new Size(209, 23);
+            cmbStipendija.Size = new Size(238, 28);
             cmbStipendija.TabIndex = 1;
             // 
             // btnSacuvaj
             // 
-            btnSacuvaj.Location = new Point(215, 139);
+            btnSacuvaj.Location = new Point(246, 185);
+            btnSacuvaj.Margin = new Padding(3, 4, 3, 4);
             btnSacuvaj.Name = "btnSacuvaj";
-            btnSacuvaj.Size = new Size(75, 23);
+            btnSacuvaj.Size = new Size(86, 31);
             btnSacuvaj.TabIndex = 2;
             btnSacuvaj.Text = "Sacuvaj";
             btnSacuvaj.UseVisualStyleBackColor = true;
@@ -104,9 +109,9 @@
             // 
             // frmStipendijaAddEdit
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(302, 174);
+            ClientSize = new Size(345, 232);
             Controls.Add(btnSacuvaj);
             Controls.Add(cmbStipendija);
             Controls.Add(cmbGodina);
@@ -114,6 +119,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmStipendijaAddEdit";
             Text = "frmStipendijaAddEdit";
             Load += frmStipendijaAddEdit_Load;

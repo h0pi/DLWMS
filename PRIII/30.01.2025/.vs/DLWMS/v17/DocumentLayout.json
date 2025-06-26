@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammyh\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammyh\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammyh\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmstudentedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmstudentedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\dlwms.winapp\\ib220240\\frmstudentedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmstudentedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammyh\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmpretraga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammyh\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|solutionrelative:dlwms.winapp\\ib220240\\frmrazmjene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1260F62C-29D1-415E-B654-CC3B61DB1433}|DLWMS.WinApp\\DLWMS.WinApp.csproj|c:\\users\\ammyh\\dlwms\\priii\\30.01.2025\\dlwms.winapp\\ib220240\\shared.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,31 +38,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "frmStudentEdit.cs",
               "DocumentMoniker": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmStudentEdit.cs",
               "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmStudentEdit.cs",
               "ToolTip": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmStudentEdit.cs",
               "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmStudentEdit.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:40:47.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmStudentEdit.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmStudentEdit.cs",
               "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmStudentEdit.cs",
               "ToolTip": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmStudentEdit.cs [Design]",
               "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmStudentEdit.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:40:43.555Z"
+              "WhenOpened": "2025-03-31T20:40:43.555Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -78,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmRazmjene.cs",
               "DocumentMoniker": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
               "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmRazmjene.cs",
@@ -102,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmPretraga.cs",
               "DocumentMoniker": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmPretraga.cs",
               "RelativeDocumentMoniker": "DLWMS.WinApp\\IB220240\\frmPretraga.cs",
               "ToolTip": "C:\\Users\\ammyh\\DLWMS\\PRIII\\30.01.2025\\DLWMS.WinApp\\IB220240\\frmPretraga.cs",
               "RelativeToolTip": "DLWMS.WinApp\\IB220240\\frmPretraga.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBYAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T08:08:34.537Z",
               "EditorCaption": ""
