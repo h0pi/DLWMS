@@ -1,0 +1,83 @@
+<mat-card>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <h2 style="margin: 0;">Matična knjiga studenta</h2>
+    <button mat-raised-button color="primary" (click)="noviSemestar()">
+      <mat-icon>add</mat-icon>
+      Novi semestar
+    </button>
+  </div>
+</mat-card>
+
+<div>
+  <div class="search-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Search</mat-label>
+      <input (keyup)="applyFilter($event)" matInput placeholder="Search students">
+    </mat-form-field>
+    <select [(ngModel)]="status">
+      <option value="">All</option>
+      <option value="active">Active</option>
+      <option value="deleted">Deleted</option>
+    </select>
+    <button (click)="getSemesters()">Search</button>
+  </div>
+
+
+  <div *ngIf="dataSource.data.length === 0" class="no-data">
+    <p>No semesters to display.</p>
+  </div>
+
+  <table [dataSource]="dataSource!" class="mat-elevation-z8" mat-table matSort>
+    <!-- First Name Column -->
+    <ng-container matColumnDef="academicYearDesc">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Academic year</mat-header-cell>
+      <mat-cell *matCellDef="let student">{{ student.academicYearDesc }}</mat-cell>
+    </ng-container>
+
+    <!-- Last Name Column -->
+    <ng-container matColumnDef="studyYear">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Year of study</mat-header-cell>
+      <mat-cell *matCellDef="let student">{{ student.studyYear }}</mat-cell>
+    </ng-container>
+
+    <!-- Student Number Column -->
+    <ng-container matColumnDef="enrollmentDate">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Date</mat-header-cell>
+      <mat-cell *matCellDef="let student">{{ student.enrollmentDate }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="isRenewal">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Renewal</mat-header-cell>
+      <mat-cell *matCellDef="let student">{{ student.isRenewal }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="tuitionFee">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Price</mat-header-cell>
+      <mat-cell *matCellDef="let student">{{ student.tuitionFee }}</mat-cell>
+    </ng-container>
+
+    <!-- Actions Column -->
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+      <mat-cell *matCellDef="let student">
+
+        <button *ngIf="!student.isDeleted" (click)="openMyConfirmDialog(student.id, true)" color="warn" mat-button>
+          <mat-icon>delete</mat-icon>
+          Delete
+        </button>
+        <button *ngIf="student.isDeleted" (click)="openMyConfirmDialog(student.id, false)" color="warn" mat-button>
+          <mat-icon>restore</mat-icon>
+          Restore
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Table Header and Rows -->
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" [class.obrisano]="row.isDeleted"></mat-row>
+  </table>
+
+
+  <mat-paginator [length]="semesters.length" [pageSizeOptions]="[5, 10, 20]" [pageSize]="5"
+                 showFirstLastButtons></mat-paginator>
+</div>
