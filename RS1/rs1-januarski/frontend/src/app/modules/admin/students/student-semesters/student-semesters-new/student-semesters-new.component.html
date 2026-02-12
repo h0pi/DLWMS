@@ -1,0 +1,15 @@
+<mat-card>
+  <h2>Upis novog semestra</h2>
+  <form (ngSubmit)="saveSemester()" [formGroup]="semesterForm">
+
+    <input type="date" formControlName="enrollmentDate" style="margin-bottom: 20px">
+    <app-my-input-text myControlName="studyYear" myLabel="Year of study" myPlaceholder="Enter year of study"></app-my-input-text>
+    <app-my-dropdown [options]="academicYears" myControlName="academicYearId" myLabel="Academic Year"></app-my-dropdown>
+
+    <div class="form-buttons">
+      <button [disabled]="semesterForm.invalid" color="primary" mat-raised-button type="submit">Save Changes</button>
+      <button color="warn" mat-raised-button routerLink="/admin/students/{{studentId}}/semesters" type="button">Cancel</button>
+    </div>
+
+  </form>
+</mat-card>
